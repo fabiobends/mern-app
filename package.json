@@ -1,0 +1,10 @@
+{
+  "name": "mern-app",
+  "version": "1.0.0",
+  "description": "This a CRUD app using MERN stack",
+  "main": "index.js",
+  "repository": "https://github.com/fabiobends/mern-app.git",
+  "author": "Fábio Mendes",
+  "license": "MIT",
+  "private": false
+}
