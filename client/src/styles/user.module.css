@@ -1,0 +1,72 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f2;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+  width: 80%;
+  margin: 2px auto;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 3%;
+}
+
+input {
+  width: 80%;
+  margin: 2px auto 10px auto;
+  font-size: 1.5em;
+  border-radius: 4em;
+  outline: none;
+  padding-left: 2%;
+}
+
+button {
+  font-size: 100%;
+  width: 50%;
+  border-radius: 4em;
+  margin: 1% auto;
+  border: none;
+  padding: 1%;
+} 
+
+
+.confirm {
+  margin-top: 2%;
+  background-color: #1252B2;
+  color: white;
+}
+
+.confirm:hover {
+  filter: brightness(130%);
+}
+
+.back {
+  background-color: white;
+  color: #4B0066;
+  margin-bottom: 2%;
+}
+
+.back:hover {
+  filter: brightness(90%);
+}
+
+.page {
+  padding: 1%;
+  text-align: center;
+  background-color:#4B0066;
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+  border-radius: 0 0 10px 10px;
+}
