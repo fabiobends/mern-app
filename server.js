@@ -1,4 +1,4 @@
-const { MONGO_URI, PORT } = require('./config');
+const { PORT } = require('./config');
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || PORT;
 
-mongoose.connect(MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
+mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true }, () => {
   console.log('Connected to Mongo database');
 })
 
@@ -19,7 +19,7 @@ app.get('/', function (req, res) {
 })
 
 app.get("/api/hello", function (req, res) {
-  res.json({greeting: 'hello API'});
+  res.json({ greeting: 'hello API' });
 });
 
 app.get('/api/user', (req, res) => {
